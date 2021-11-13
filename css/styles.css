@@ -23,25 +23,6 @@ img {
   --logo-color-dark: #000000;
   --icons: #afb1b8;
 }
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--hover-focus-color);
-  cursor: pointer;
-}
-.link-header:hover,
-.link-header:focus {
-  color: var(--hover-focus-color);
-  cursor: pointer;
-}
-.nav-list .current {
-  color: var(--hover-focus-color);
-}
-.link-header {
-  color: var(--title-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 ul {
   list-style: none;
   margin: 0;
@@ -154,6 +135,25 @@ h3 {
 .icon-contacts {
   margin-right: 10px;
   fill: currentColor;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--hover-focus-color);
+  cursor: pointer;
+}
+.link-header:hover,
+.link-header:focus {
+  color: var(--hover-focus-color);
+  cursor: pointer;
+}
+.nav-list .current {
+  color: var(--hover-focus-color);
+}
+.link-header {
+  color: var(--title-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* МЕЙН */
