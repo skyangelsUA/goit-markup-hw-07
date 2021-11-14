@@ -4,15 +4,22 @@
 
 //COMPONENTS
 @import './components/.backdrop-is-hidden';
-@import './components/btn-hero';
-@import './components/btn-portfolio';
+@import './components/hero-btn';
+@import './components/portfolio-btn';
 @import './components/container';
 @import './components/footer-form';
 @import './components/modal-checkbox';
 @import './components/modal-form-btn';
 @import './components/modal-form';
-@import './components/portfolio-overlay';
+@import './components/portfolio-cards-overlay';
 @import './components/section';
+@import './components/footer-logo';
+@import './components/header-logo';
+@import './components/header-links';
+@import './components/header-contacts';
+@import './components/footer-social-links';
+@import './components/footer-contacts';
+@import './components/portfolio_cards';
 
 //LAYOUT
 @import './layout/footer';

@@ -1,0 +1,33 @@
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-list .item + .item {
+  margin-left: 50px;
+}
+.nav-list .link-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  cursor: pointer;
+}
+.link-header {
+  color: var(--title-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+    cursor: pointer;
+  }
+}
+.nav-list .current {
+  color: var(--hover-focus-color);
+}
