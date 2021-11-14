@@ -7,19 +7,6 @@
   --icons: #afb1b8;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--title-color);
@@ -46,6 +33,19 @@ h1,
 h2,
 h3 {
   margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .is-hidden {
@@ -93,15 +93,6 @@ h3 {
   border-radius: 4px;
 }
 
-.btn-portfolio:hover,
-.btn-portfolio:focus {
-  color: #ffffff;
-  background-color: var(--hover-focus-color);
-  cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
 .list-btn {
   display: flex;
   justify-content: center;
@@ -128,6 +119,14 @@ h3 {
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-portfolio:hover, .btn-portfolio:focus {
+  color: #ffffff;
+  background-color: var(--hover-focus-color);
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .container {
@@ -191,7 +190,7 @@ h3 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  padding: 10px 55px;
+  padding: 0px 28px;
   border-radius: 4px;
   display: block;
   border: none;
@@ -288,8 +287,7 @@ h3 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:hover,
-.modal-form-input:focus {
+.modal-form-input:hover, .modal-form-input:focus {
   border-color: var(--hover-focus-color);
   outline: none;
 }
@@ -316,8 +314,7 @@ h3 {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-massege:hover,
-.modal-form-massege:focus {
+.modal-form-massege:hover, .modal-form-massege:focus {
   border-color: var(--hover-focus-color);
   outline: none;
 }
@@ -517,15 +514,14 @@ h3 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-social-links:hover, .footer-social-links:focus {
+  fill: #ffffff;
+  background-color: var(--hover-focus-color);
+}
+
 .footer-social-icons {
   width: 20px;
   height: 20px;
-}
-
-.footer-social-links:hover,
-.footer-social-links:focus {
-  fill: #ffffff;
-  background-color: var(--hover-focus-color);
 }
 
 .link-header.current {
@@ -615,21 +611,14 @@ h3 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.contacts-link:hover, .contacts-link:focus {
+  color: var(--hover-focus-color);
+  cursor: pointer;
+}
+
 .icon-contacts {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--hover-focus-color);
-  cursor: pointer;
-}
-
-.link-header:hover,
-.link-header:focus {
-  color: var(--hover-focus-color);
-  cursor: pointer;
 }
 
 .nav-list .current {
@@ -641,6 +630,11 @@ h3 {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-header:hover, .link-header:focus {
+  color: var(--hover-focus-color);
+  cursor: pointer;
 }
 
 .hero-fifth-title {
@@ -678,14 +672,13 @@ h3 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-icon {
-  fill: currentColor;
-}
-
-.customers-link:hover,
-.customers-link:focus {
+.customers-link:hover, .customers-link:focus {
   color: var(--hover-focus-color);
   border-color: var(--hover-focus-color);
+}
+
+.customers-icon {
+  fill: currentColor;
 }
 
 .background {
@@ -762,15 +755,14 @@ h3 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-links:hover, .social-links:focus {
+  fill: #ffffff;
+  background-color: var(--hover-focus-color);
+}
+
 .social-icons {
   width: 20px;
   height: 20px;
-}
-
-.social-links:hover,
-.social-links:focus {
-  fill: #ffffff;
-  background-color: var(--hover-focus-color);
 }
 
 .work {

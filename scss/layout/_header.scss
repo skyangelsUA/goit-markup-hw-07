@@ -1,15 +1,16 @@
 .link-header.current {
   position: relative;
-}
-.link-header.current::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  position: absolute;
-  bottom: -34px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -34px;
+  }
 }
 .header {
   align-items: center;
@@ -75,20 +76,16 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+    cursor: pointer;
+  }
 }
 .icon-contacts {
   margin-right: 10px;
   fill: currentColor;
-}
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--hover-focus-color);
-  cursor: pointer;
-}
-.link-header:hover,
-.link-header:focus {
-  color: var(--hover-focus-color);
-  cursor: pointer;
 }
 .nav-list .current {
   color: var(--hover-focus-color);
@@ -98,4 +95,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+    cursor: pointer;
+  }
 }

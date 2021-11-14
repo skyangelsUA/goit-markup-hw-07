@@ -28,12 +28,13 @@
   transition-property: color, border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+    border-color: var(--hover-focus-color);
+  }
 }
 .customers-icon {
   fill: currentColor;
-}
-.customers-link:hover,
-.customers-link:focus {
-  color: var(--hover-focus-color);
-  border-color: var(--hover-focus-color);
 }

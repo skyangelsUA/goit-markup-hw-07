@@ -10,15 +10,15 @@
   color: #757575;
   margin-bottom: 30px;
   cursor: pointer;
-}
-.modal-form-checkbox-lable::before {
-  display: block;
-  content: '';
-  height: 15px;
-  width: 15px;
-  margin-right: 7px;
-  border: 1px solid #212121;
-  border-radius: 2px;
+  &::before {
+    display: block;
+    content: '';
+    height: 15px;
+    width: 15px;
+    margin-right: 7px;
+    border: 1px solid #212121;
+    border-radius: 2px;
+  }
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-lable::before {
