@@ -1,4 +1,4 @@
-.connect {
+.footer-connect-title {
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
@@ -7,13 +7,14 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.footer-social-list {
+.footer-connect-social__list {
   display: flex;
 }
-.footer-social-list .item + .item {
+
+.footer-connect-social__item:not(:first-child) {
   margin-left: 10px;
 }
-.footer-social-links {
+.footer-connect-social__links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +35,7 @@
     background-color: var(--hover-focus-color);
   }
 }
-.footer-social-icons {
+.footer-connect-social__icons {
   width: 20px;
   height: 20px;
 }
