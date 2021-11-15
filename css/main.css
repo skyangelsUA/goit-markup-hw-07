@@ -754,7 +754,7 @@ h3 {
   padding-top: 0;
 }
 
-.hero-third-title {
+.work-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -768,15 +768,15 @@ h3 {
   display: flex;
 }
 
-.list-item {
-  position: relative;
-}
-
-.image-list .item + .item {
+.image-list .image-item:not(:first-child) {
   margin-left: 30px;
 }
 
-.image-title {
+.image-list .image-item {
+  position: relative;
+}
+
+.image-list .image-item__title {
   display: flex;
   align-items: center;
   justify-content: center;
