@@ -1,4 +1,4 @@
-.hero-fifth-title {
+.regular-customers-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -7,16 +7,17 @@
   color: var(--title-color);
   margin-bottom: 50px;
 }
-.customers-list {
+.regular-customers__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  & .regular-customers__item {
+    width: 170px;
+    height: 92px;
+  }
 }
-.customers-list .item {
-  width: 170px;
-  height: 92px;
-}
-.customers-link {
+.regular-customers__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +36,6 @@
     border-color: var(--hover-focus-color);
   }
 }
-.customers-icon {
+.regular-customers__icon {
   fill: currentColor;
 }
