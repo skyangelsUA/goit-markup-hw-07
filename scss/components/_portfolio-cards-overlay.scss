@@ -1,6 +1,6 @@
-.portfolio-link:hover .overlay,
-.portfolio-link:focus .overlay {
-  transform: translatey(0);
+.project-box {
+  position: relative;
+  overflow: hidden;
 }
 .overlay {
   position: absolute;
@@ -15,10 +15,11 @@
   transform: translatey(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.overlay > p {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+
+  & > p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+  }
 }

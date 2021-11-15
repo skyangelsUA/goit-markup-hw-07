@@ -93,17 +93,17 @@ h3 {
   border-radius: 4px;
 }
 
-.list-btn {
+.portfolio-btn__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.list-btn .item + .item {
+.portfolio-btn__list .portfolio-btn__item:not(:first-child) {
   margin-left: 8px;
 }
 
-.btn-portfolio {
+.portfolio__btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -121,7 +121,7 @@ h3 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-portfolio:hover, .btn-portfolio:focus {
+.portfolio__btn:hover, .portfolio__btn:focus {
   color: #ffffff;
   background-color: var(--hover-focus-color);
   cursor: pointer;
@@ -355,9 +355,9 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-.portfolio-link:hover .overlay,
-.portfolio-link:focus .overlay {
-  transform: translatey(0);
+.project-box {
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay {
@@ -572,24 +572,23 @@ h3 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.portfolio-link {
+.project-list__link {
   display: block;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover,
-.card:focus {
+.project-list__link:hover, .project-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-box {
-  position: relative;
-  overflow: hidden;
+.project-list__link:hover .overlay,
+.project-list__link:focus .overlay {
+  transform: translatey(0);
 }
 
-.portfolio-thumb {
+.project-information {
   background: #ffffff;
   border: 1px solid #eeeeee;
   padding-left: 24px;
@@ -598,7 +597,7 @@ h3 {
   padding-right: 24px;
 }
 
-.portfolio-name {
+.project-information__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -606,7 +605,7 @@ h3 {
   color: #212121;
 }
 
-.portfolio-project {
+.project-information__type {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -902,6 +901,11 @@ h3 {
   fill: var(--hover-focus-color);
 }
 
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-form-title {
   font-size: 20px;
   font-weight: 700;
@@ -912,12 +916,6 @@ h3 {
   margin-bottom: 12px;
 }
 
-.moda-form-box {
-  position: relative;
-  margin-top: 4px;
-  display: block;
-}
-
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -925,7 +923,7 @@ h3 {
   margin-top: -30px;
 }
 
-.project-list .item {
+.project-list .project-list__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;

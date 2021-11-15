@@ -1,12 +1,14 @@
-.list-btn {
+.portfolio-btn__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  .portfolio-btn__item:not(:first-child) {
+    margin-left: 8px;
+  }
 }
-.list-btn .item + .item {
-  margin-left: 8px;
-}
-.btn-portfolio {
+
+.portfolio__btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
