@@ -12,12 +12,12 @@
   align-items: center;
   justify-content: space-between;
 
-  & .regular-customers__item {
+  & .regular-customer__item {
     width: 170px;
     height: 92px;
   }
 }
-.regular-customers__link {
+.regular-customer__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +36,6 @@
     border-color: var(--hover-focus-color);
   }
 }
-.regular-customers__icon {
+.regular-customer__icon {
   fill: currentColor;
 }

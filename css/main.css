@@ -638,12 +638,12 @@ h3 {
   justify-content: space-between;
 }
 
-.regular-customers__list .regular-customers__item {
+.regular-customers__list .regular-customer__item {
   width: 170px;
   height: 92px;
 }
 
-.regular-customers__link {
+.regular-customer__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -657,12 +657,12 @@ h3 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.regular-customers__link:hover, .regular-customers__link:focus {
+.regular-customer__link:hover, .regular-customer__link:focus {
   color: var(--hover-focus-color);
   border-color: var(--hover-focus-color);
 }
 
-.regular-customers__icon {
+.regular-customer__icon {
   fill: currentColor;
 }
 
