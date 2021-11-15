@@ -1,7 +1,7 @@
-.background {
+.team {
   background-color: #f5f4fa;
 }
-.hero-fourth-title {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -10,23 +10,26 @@
   color: var(--title-color);
   margin-bottom: 50px;
 }
-.list-users {
+.team-list {
   display: flex;
   text-align: center;
+
+  & .team-list__user {
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
 }
-.list-users .users + .users {
-  margin-left: 30px;
-}
-.list-users .users {
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.user-thumb {
+
+.user-information {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.user {
+.user-information__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -35,21 +38,23 @@
   width: 270px;
   margin-bottom: 10px;
 }
-.job-user {
+.user-information__job {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--subtitle-color);
   margin-bottom: 16px;
 }
-.users-social-list {
+.user-information-social__list {
   display: flex;
   justify-content: center;
+
+  .user-information-social__item:not(:first-child) {
+    margin-left: 10px;
+  }
 }
-.users-social-list .item + .item {
-  margin-left: 10px;
-}
-.social-links {
+
+.user-information-social__links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +74,7 @@
     background-color: var(--hover-focus-color);
   }
 }
-.social-icons {
+.user-information-social__icon {
   width: 20px;
   height: 20px;
 }
