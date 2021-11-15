@@ -12,7 +12,7 @@
     margin-right: 50px;
   }
 
-  & .link-header {
+  & .nav-list__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -26,7 +26,7 @@
   }
 }
 
-.link-header {
+.nav-list__link {
   color: var(--title-color);
   transition-property: color;
   transition-duration: 250ms;
