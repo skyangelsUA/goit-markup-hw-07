@@ -8,7 +8,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  .nav-list__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 50px;
   }
 
