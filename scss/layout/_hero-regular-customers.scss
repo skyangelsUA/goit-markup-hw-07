@@ -7,15 +7,15 @@
   color: var(--title-color);
   margin-bottom: 50px;
 }
-.regular-customers__list {
+.regular-customers {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
-  & .regular-customer__item {
-    width: 170px;
-    height: 92px;
-  }
+.regular-customer__item {
+  width: 170px;
+  height: 92px;
 }
 .regular-customer__link {
   display: flex;
