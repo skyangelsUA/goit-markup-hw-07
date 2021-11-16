@@ -268,7 +268,7 @@ h3 {
   flex-direction: column;
 }
 
-.modal-form-area {
+.modal-form__area {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -421,7 +421,7 @@ h3 {
   padding-bottom: 32px;
 }
 
-.nav-list .nav-list__item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 

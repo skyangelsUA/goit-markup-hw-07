@@ -1,15 +1,17 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-}
-.modal-form-area {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
 
-  margin-bottom: 10px;
+  &__area {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+
+    margin-bottom: 10px;
+  }
 }
+
 .moda-form-box {
   position: relative;
   margin-top: 4px;
