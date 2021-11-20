@@ -13,13 +13,13 @@
 .image-list {
   display: flex;
 
-  .image-item:not(:first-child) {
+  &__item:not(:first-child) {
     margin-left: 30px;
   }
-  .image-item {
+  &__item {
     position: relative;
   }
-  .image-item__title {
+  &__item__title {
     display: flex;
     align-items: center;
     justify-content: center;

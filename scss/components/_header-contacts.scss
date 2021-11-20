@@ -26,9 +26,9 @@
       cursor: pointer;
     }
   }
-}
 
-.contacts-list__link__icon {
-  margin-right: 10px;
-  fill: currentColor;
+  &__link__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
